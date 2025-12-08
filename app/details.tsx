@@ -1,0 +1,20 @@
+import { useLocalSearchParams } from "expo-router";
+import { ScrollView } from "react-native";
+
+export default function Details() {
+    const params = useLocalSearchParams()
+
+    console.log(params.name)
+
+    // useEffect(() => {},[])
+
+  return (
+    <ScrollView
+      contentContainerStyle={{
+        gap: 16,
+        padding: 16,
+      }}
+    ></ScrollView>
+  );
+}
+
