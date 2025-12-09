@@ -1,16 +1,17 @@
 import { Stack } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   return (
-    <Stack>
-      <Stack.Screen name="index" options={{ title: "Home" }} />
-      <Stack.Screen
-        name="details"
-        options={{
-          title: "Details",
-          headerBackButtonDisplayMode: "minimal",
-        }}
-      />
-    </Stack>
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        headerStyle: { backgroundColor: "#4a90e2" },
+        headerTintColor: "white",
+        headerTitleStyle: { color: "white" },
+      }}
+    />
   );
 }
