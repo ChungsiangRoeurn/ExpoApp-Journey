@@ -23,7 +23,7 @@ export default function TabsLayout() {
 
           return (
             <View style={{ flexDirection: "row", marginRight: 15, gap: 15 }}>
-              <TouchableOpacity onPress={() => console.log("Notifications")}>
+              <TouchableOpacity onPress={() => router.push("/notification")}>
                 <Ionicons
                   name="notifications-outline"
                   size={24}
